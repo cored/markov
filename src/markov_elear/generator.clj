@@ -64,7 +64,11 @@
                                               (env :user-access-token)
                                               (env :user-access-secret)))
 
-(def files ["quangle-wangle.txt", "clojure.txt", "functional.txt", "monad.txt"])
+(def files ["quangle-wangle.txt",
+            "clojure.txt",
+            "functional.txt",
+            "monad.txt",
+            "drug.txt"])
 
 (def functional-leary (apply merge-with clojure.set/union (map process-file files)))
 
