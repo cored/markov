@@ -102,4 +102,4 @@
 (defn -main [& args]
   (println "Started up")
   (println (tweet-text))
-  (overtone/every (* 1000 60 60 8) #(println (status-update)) my-pool))
+  (overtone/every (* 1000 60 60 16) #(println (status-update)) my-pool))
